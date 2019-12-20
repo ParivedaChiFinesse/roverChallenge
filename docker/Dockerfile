@@ -24,3 +24,6 @@ RUN curl -o /usr/local/bin/patchelf https://s3-us-west-2.amazonaws.com/openai-sc
     && chmod +x /usr/local/bin/patchelf
 
 RUN pip3 install rl_coach
+
+RUN mkdir -p /home/coach/experiments
+WORKDIR /home/coach
